@@ -1,8 +1,11 @@
-We demand all CI workflow to pass before code changes may be reviewed.
-We stricly prohibit blank lines inside method bodies, remove them and don't use.
-We strictly prohibit comments inside method and function bodies, don't use them and remove if you find them.
-We use single nouns for variable names, never use compound or composite names.
-We use single verbs for method names, try to not use compound or composite names.
-We keep unit tests in a file that one-to-one maps the feature file.
-We respect DDD and Elegant Objects paradigms, treating objects as abstracts of real-world entities.
-We cover every change made with a unit tests, to guarantee repeatability.
+All CI workflow must pass before code changes may be reviewed.
+Method bodies may not contain blank lines.
+Mthod and function bodies may not contain comments.
+Variable names must be single nouns, never compound or composite.
+Method names must be single verbs, never compound or composite names.
+Every change made must be covered by a unit test, to guarantee repeatability.
+Every test case may have only one assertion.
+In every test case, an assertion must be the last statement.
+Test cases must be as short as possible.
+Every test case must assert at least once.
+Every test file must be one-to-one mapped to the feature file that it tests.
