@@ -4,7 +4,8 @@
 version = 1
 [[annotations]]
 path = [
-    "README.txt"
+    "README.txt",
+    "renovate.json"
 ]
 precedence = "override"
 SPDX-FileCopyrightText = "Copyright (c) 2025 Yegor Bugayenko"

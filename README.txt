@@ -13,6 +13,21 @@ Elegant Objects design principles must be respected.
 Class names may not end with the -er suffix.
 Setters must be avoided, as they make objects mutable.
 Immutable objects must be favored over mutable ones.
+Every class may have only one primary constructor; any secondary constructor must delegate to it.
+Every class may encapsulate no more than four attributes.
+Every class must encapsulate at least one attribute.
+Utility classes are strictly prohibited.
+Static methods in classes are strictly prohibited.
+Method names must respect the CQRS principle: they must be either nouns or verbs.
+Classes must avoid using public static literals.
+Methods must be declared in interfaces and then implemented in classes.
+Public methods that do not implement an interface must be avoided.
+Methods must never return null.
+Methods should avoid checking incoming arguments for validity.
+null may not be passed as an argument.
+Type introspection and type casting are strictly prohibited.
+Reflection on object internals is strictly prohibited.
+All classes must be declared final, thus prohibiting inheritance.
 
 Every change must be covered by a unit test to guarantee repeatability.
 Every test case may contain only one assertion.
