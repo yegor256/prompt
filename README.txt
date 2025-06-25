@@ -9,6 +9,7 @@ Method bodies may not contain blank lines.
 Method and function bodies may not contain comments.
 Variable names must be single nouns, never compound or composite.
 Method names must be single verbs, never compound or composite.
+The principle of "Paired Brackets" suggested by Yegor Bugayenko must be respected.
 
 Constructors may not contain any code except assignment statements.
 Implementation inheritance must be avoided at all costs (not to be confused with subtyping).
