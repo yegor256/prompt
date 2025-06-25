@@ -1,4 +1,9 @@
 All CI workflows must pass before code changes may be reviewed.
+The existing code structure must not be changed without a strong reason.
+Every bug must be reproduced by a unit test before being fixed.
+Every new feature must be covered by a unit test before it is implemented.
+Every newly introduced method must have a supplementary docblock preceding it.
+Minor inconsistencies and typos in the existing code may be fixed.
 
 Method bodies may not contain blank lines.
 Method and function bodies may not contain comments.
