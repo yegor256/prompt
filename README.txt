@@ -10,6 +10,8 @@ Method and function bodies may not contain comments.
 Variable names must be single nouns, never compound or composite.
 Method names must be single verbs, never compound or composite.
 The principle of "Paired Brackets" suggested by Yegor Bugayenko must be respected.
+Error and log messages should not end with a period.
+Error and log messages must always be a single sentence, with no periods inside.
 
 Constructors may not contain any code except assignment statements.
 Implementation inheritance must be avoided at all costs (not to be confused with subtyping).
@@ -34,6 +36,7 @@ null may not be passed as an argument.
 Type introspection and type casting are strictly prohibited.
 Reflection on object internals is strictly prohibited.
 All classes must be declared final, thus prohibiting inheritance.
+Exception messages must include as much context as possible.
 
 Every change must be covered by a unit test to guarantee repeatability.
 Every test case may contain only one assertion.
