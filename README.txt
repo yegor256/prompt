@@ -75,3 +75,4 @@ Tests must use ephemeral TCP ports, generated using appropriate library function
 Tests should inline small fixtures instead of loading them from files.
 Tests should create large fixtures at runtime rather than store them in files.
 Tests may create supplementary fixture objects to avoid code duplication.
+Test method names must spell “cannot” and “dont” without apostrophes.
