@@ -12,6 +12,7 @@ Method names must be single verbs, never compound or composite.
 The principle of "Paired Brackets" suggested by Yegor Bugayenko must be respected.
 Error and log messages should not end with a period.
 Error and log messages must always be a single sentence, with no periods inside.
+Favor "fail fast" paradigm over "fail safe": throw exception earlier.
 
 Constructors may not contain any code except assignment statements.
 Implementation inheritance must be avoided at all costs (not to be confused with subtyping).
