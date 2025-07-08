@@ -70,7 +70,7 @@ Tests must verify object behavior in multi-threaded, concurrent environments.
 Tests must retry potentially flaky code blocks.
 Tests must assume the absence of an Internet connection.
 Tests may not assert on error messages or codes.
-Tests must not rely on default configurations of the objects they test; they must always provide custom arguments.
+Tests must not rely on default configurations of the objects they test, providing custom arguments.
 Tests must not mock the file system, sockets, or memory managers.
 Tests must use ephemeral TCP ports, generated using appropriate library functions.
 Tests should inline small fixtures instead of loading them from files.
