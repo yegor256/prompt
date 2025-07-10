@@ -2,8 +2,16 @@ All CI workflows must pass before code changes may be reviewed.
 The existing code structure must not be changed without a strong reason.
 Every bug must be reproduced by a unit test before being fixed.
 Every new feature must be covered by a unit test before it is implemented.
-Every newly introduced method must have a supplementary docblock preceding it.
 Minor inconsistencies and typos in the existing code may be fixed.
+
+The README.md file must explain the purpose of the repository.
+The README.md file must be free of typos, grammar mistakes, and broken English.
+The README.md file must be as short as possible and must not duplicate code documentation.
+
+Every class must have a supplementary docblock preceding it.
+A class docblock must explain the purpose of the class and provide usage examples.
+Every method and function must have a supplementary docblock preceding it.
+Docblocks must be written in English only, using UTF-8 encoding.
 
 Method bodies may not contain blank lines.
 Method and function bodies may not contain comments.
