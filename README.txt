@@ -1,87 +1,87 @@
-All CI workflows must pass before code changes may be reviewed.
-The existing code structure must not be changed without a strong reason.
-Every bug must be reproduced by a unit test before being fixed.
-Every new feature must be covered by a unit test before it is implemented.
-Minor inconsistencies and typos in the existing code may be fixed.
+My pronoun is HE/HIM, not THEY/THEM.
+My name is Yegor, call me by name.
 
-The README.md file must explain the purpose of the repository.
-The README.md file must be free of typos, grammar mistakes, and broken English.
-The README.md file must be as short as possible and must not duplicate code documentation.
+Always use GNU tools, like gsed, gfind, ggrep, gcat, etc.
 
-Every class must have a supplementary docblock preceding it.
-A class docblock must explain the purpose of the class and provide usage examples.
-Every method and function must have a supplementary docblock preceding it.
-Docblocks must be written in English only, using UTF-8 encoding.
+Don't change existing code structure without a strong reason.
+Reproduce a bug or a feature with a unit or integration test and only then fix it.
 
-Method bodies may not contain blank lines.
-Method and function bodies may not contain comments.
-Variable names must be single nouns, never compound or composite.
-Method names must be single verbs, never compound or composite.
-The principle of "Paired Brackets" suggested by Yegor Bugayenko must be respected.
-Error and log messages should not end with a period.
-Error and log messages must always be a single sentence, with no periods inside.
+Be verbose and direct in README.md and code documentation.
+Don't use inline code comments, only codeblocks on top of classes and methods.
+Prepent every class with a docblock that explains the purpose of the class and provides usage examples.
+Use English only to write doclbocks, using only ASCII.
+
+Don't put black lines into method bodies.
+Use single nouns for variable names, never use compound or composite names.
+Use single verbs for method names, never compound or composite.
+Respect the principle of "Paired Brackets" suggested by Yegor Bugayenko.
+Don't end error and log messages should with a period.
+Keep error and log messages as single sentences, with no periods inside.
 Favor "fail fast" paradigm over "fail safe": throw exception earlier.
 
-Constructors may not contain any code except assignment statements.
-Implementation inheritance must be avoided at all costs (not to be confused with subtyping).
-Getters must be avoided, as they are symptoms of an anemic object model.
-The DDD paradigm must be respected.
-Elegant Objects design principles must be respected.
-Class names may not end with the -er suffix.
-Setters must be avoided, as they make objects mutable.
-Immutable objects must be favored over mutable ones.
-Every class may have only one primary constructor; any secondary constructor must delegate to it.
-Every class may encapsulate no more than four attributes.
-Every class must encapsulate at least one attribute.
-Utility classes are strictly prohibited.
-Static methods in classes are strictly prohibited.
-Method names must respect the CQRS principle: they must be either nouns or verbs.
-Classes must avoid using public static literals.
-Methods must be declared in interfaces and then implemented in classes.
-Public methods that do not implement an interface must be avoided.
-Methods must never return null.
-Methods should avoid checking incoming arguments for validity.
-null may not be passed as an argument.
-Type introspection and type casting are strictly prohibited.
-Reflection on object internals is strictly prohibited.
-All classes must be declared final, thus prohibiting inheritance.
-Exception messages must include as much context as possible.
+---
 
-Every change must be covered by a unit test to guarantee repeatability.
-Every test case may contain only one assertion.
-In every test, the assertion must be the last statement.
-Test cases must be as short as possible.
-Every test must assert at least once.
-Each test file must have a one-to-one mapping with the feature file it tests.
-Every assertion must include a failure message that is a negatively toned claim about the error.
-Tests must use irregular inputs, such as non-ASCII strings.
-Tests may not share object attributes.
-Tests may not use setUp() or tearDown() idioms.
-Tests may not use static literals or other shared constants.
-Tests must be named as full English sentences, stating what the object under test does.
-Tests may not test functionality irrelevant to their stated purpose.
-Tests must close resources they use, such as file handlers, sockets, and database connections.
-Objects must not provide functionality used only by tests.
-Tests may not assert on side effects such as logging output.
-Tests may not check the behavior of setters, getters, or constructors.
-Tests must not clean up after themselves; instead, they must prepare a clean state at the start.
-Tests should not use mocks, favoring fake objects and stubs.
-The best tests consist of a single statement.
-Tests should use Hamcrest matchers if available.
-Each test must verify only one specific behavioral pattern of the object it tests.
-Tests must use random values as inputs.
-Tests should store temporary files in temporary directories, not in the codebase directory.
-Tests are not allowed to print any log messages.
-The testing framework must be configured to disable logging from the objects under test.
-Tests must not wait indefinitely for any event; they must always stop waiting on a timeout.
-Tests must verify object behavior in multi-threaded, concurrent environments.
-Tests must retry potentially flaky code blocks.
-Tests must assume the absence of an Internet connection.
-Tests may not assert on error messages or codes.
-Tests must not rely on default configurations of the objects they test, providing custom arguments.
-Tests must not mock the file system, sockets, or memory managers.
-Tests must use ephemeral TCP ports, generated using appropriate library functions.
-Tests should inline small fixtures instead of loading them from files.
-Tests should create large fixtures at runtime rather than store them in files.
-Tests may create supplementary fixture objects to avoid code duplication.
-Test method names must spell “cannot” and “dont” without apostrophes.
+Don't put any code in constructors except assignment statements.
+Avoid implementation inheritance at all costs (not to be confused with subtyping).
+Avoid getters, as they are symptoms of an anemic object model.
+Respect the DDD paradigm.
+Respect Elegant Objects design principles.
+Don't use the -er suffix in class names: don't create Managers, Controllers, Routers, Readers, and Writers.
+Avoid setters, as they make objects mutable.
+Favor immutable objects over mutable ones.
+Never change attributes after assignment.
+Use only one primary constructor per class; delegate from secondary constructors to it.
+Encapsulate no more than four attributes per class.
+Encapsulate at least one attribute per class.
+Don't create utility classes.
+Don't use static methods in classes.
+Name methods according to CQRS principle: use either nouns or verbs.
+Don't use public static literals in classes.
+Declare methods in interfaces and then implement them in classes.
+Avoid public methods that do not implement an interface.
+Never return null from methods.
+Avoid checking incoming arguments for validity in methods.
+Never pass null as an argument.
+Don't use type introspection or type casting.
+Don't use reflection on object internals.
+Declare all classes as final, prohibiting inheritance.
+Include as much context as possible in exception messages.
+
+Cover every change with a unit test to guarantee repeatability.
+Put only one assertion in every test case.
+Place the assertion as the last statement in every test.
+Keep test cases as short as possible.
+Assert at least once in every test.
+Map each test file one-to-one with the feature file it tests.
+Include a failure message in every assertion that is a negatively toned claim about the error.
+Use irregular inputs in tests, such as non-ASCII strings.
+Don't share object attributes between tests.
+Don't use setUp() or tearDown() idioms in tests.
+Don't use static literals or other shared constants in tests.
+Name tests as full English sentences, stating what the object under test does.
+Don't test functionality irrelevant to the test's stated purpose.
+Close resources in tests, such as file handlers, sockets, and database connections.
+Don't provide functionality in objects used only by tests.
+Don't assert on side effects such as logging output in tests.
+Don't check the behavior of setters, getters, or constructors in tests.
+Prepare a clean state at the start of tests instead of cleaning up after themselves.
+Favor fake objects and stubs over mocks in tests.
+Aim for tests that consist of a single statement.
+Use Hamcrest matchers in tests if available.
+Verify only one specific behavioral pattern per test.
+Use random values as inputs in tests.
+Store temporary files in temporary directories, not in the codebase directory.
+Don't print any log messages in tests.
+Configure the testing framework to disable logging from the objects under test.
+Never wait indefinitely for any event in tests; always stop waiting on a timeout.
+Verify object behavior in multi-threaded, concurrent environments in tests.
+Retry potentially flaky code blocks in tests.
+Assume the absence of an Internet connection in tests.
+Don't assert on error messages or codes in tests.
+Don't rely on default configurations of the objects under test, provide custom arguments.
+Don't mock the file system, sockets, or memory managers in tests.
+Use ephemeral TCP ports in tests, generated using appropriate library functions.
+Inline small fixtures in tests instead of loading them from files.
+Create large fixtures at runtime rather than store them in files.
+Create supplementary fixture objects to avoid code duplication in tests.
+Spell "cannot" and "dont" without apostrophes in test method names.
