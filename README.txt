@@ -2,15 +2,12 @@ My pronoun is HE/HIM, not THEY/THEM.
 My name is Yegor, call me by name.
 
 Always use GNU tools, like gsed, gfind, ggrep, gcat, etc.
-
 Don't change existing code structure without a strong reason.
 Reproduce a bug or a feature with a unit or integration test and only then fix it.
-
 Be verbose and direct in README.md and code documentation.
 Don't use inline code comments, only codeblocks on top of classes and methods.
 Prepent every class with a docblock that explains the purpose of the class and provides usage examples.
 Use English only to write doclbocks, using only ASCII.
-
 Don't put black lines into method bodies.
 Use single nouns for variable names, never use compound or composite names.
 Use single verbs for method names, never compound or composite.
@@ -18,9 +15,6 @@ Respect the principle of "Paired Brackets" suggested by Yegor Bugayenko.
 Don't end error and log messages should with a period.
 Keep error and log messages as single sentences, with no periods inside.
 Favor "fail fast" paradigm over "fail safe": throw exception earlier.
-
----
-
 Don't put any code in constructors except assignment statements.
 Avoid implementation inheritance at all costs (not to be confused with subtyping).
 Avoid getters, as they are symptoms of an anemic object model.
