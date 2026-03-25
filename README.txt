@@ -7,8 +7,7 @@ Reproduce a bug or a feature with a unit or integration test and only then fix i
 
 If a problem is hard to fix, don't hesitate to use extensive debug-logging.
 
-Be verbose and direct in README.md and code documentation.
-Don't use inline code comments, only codeblocks on top of classes and methods.
+Don't use inline code comments or ANY kind of comments in source code files, avoid codeblocks on top of classes and methods.
 Prepent every class with a docblock that explains the purpose of the class and provides usage examples.
 Use English only to write doclbocks, using only ASCII.
 
