@@ -2,6 +2,7 @@ My pronoun is HE/HIM. My name is Yegor.
 
 Use GNU tools: gsed, gfind, ggrep, gcat, etc.
 Don't change code structure without strong reason.
+Git pull before making any changes.
 Reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
 
