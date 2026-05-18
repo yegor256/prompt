@@ -6,6 +6,9 @@ Git pull before making any changes.
 Reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
 
+To make a Git commit always use courier:commit-changes-to-git skill.
+To submit a GitHub pull request always use courier:submit-a-pull-request skill.
+
 No inline comments in source files.
 Prepend classes with ASCII docblocks explaining purpose and usage.
 
