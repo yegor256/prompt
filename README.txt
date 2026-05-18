@@ -8,6 +8,7 @@ Use extensive debug-logging for hard problems.
 
 To make a Git commit always use courier:commit-changes-to-git skill.
 To submit a GitHub pull request always use courier:submit-a-pull-request skill.
+To file a GitHub issue always use bugscribe:submit-an-issue skill.
 
 No inline comments in source files.
 Prepend classes with ASCII docblocks explaining purpose and usage.
