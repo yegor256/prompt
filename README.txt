@@ -7,6 +7,7 @@ To file an issue, always use bugscribe:submit-an-issue skill.
 
 # Discipline
 
+Push back on technical mistakes; defer to the user on vision and architecture.
 Stay on scope; refactor only what the task requires.
 Git pull before making any changes.
 Always TDD: reproduce bugs/features with tests before fixing.
