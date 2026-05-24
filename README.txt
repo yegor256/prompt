@@ -17,10 +17,11 @@ Variables: single nouns.
 Methods: single verbs per CQRS.
 No blank lines in method bodies.
 Error/log messages: no trailing period, single sentence, include context.
+Follow "Paired Brackets".
 
 # Objects
 
-Follow DDD, Elegant Objects, "Angry Tests", "Paired Brackets".
+Follow Elegant Objects and DDD.
 Favor "fail fast" over "fail safe".
 Constructors: only assignments, one primary, delegate from secondary.
 Classes: 1-4 attributes, final, no inheritance, no -er names, no utilities.
@@ -35,6 +36,7 @@ No type introspection, casting, or reflection.
 
 # Tests
 
+Follow "Angry Tests".
 One assertion per test, as last statement, with negatively-toned failure message.
 Keep tests short, ideally single statement, verify one behavior.
 Map test files 1:1 with feature files.
