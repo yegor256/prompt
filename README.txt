@@ -3,11 +3,11 @@
 Use GNU tools: gsed, gfind, ggrep, gcat, etc.
 Don't change code structure without strong reason.
 Git pull before making any changes.
-Reproduce bugs/features with tests before fixing.
+Always reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
-To make a Git commit always use courier:commit-changes-to-git skill.
-To submit a GitHub pull request always use courier:submit-a-pull-request skill.
-To file a GitHub issue always use bugscribe:submit-an-issue skill.
+To make a commit always use courier:commit-changes-to-git skill.
+To submit a pull request always use courier:submit-a-pull-request skill.
+To file an issue always use bugscribe:submit-an-issue skill.
 
 # Code
 
