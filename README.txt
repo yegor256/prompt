@@ -13,6 +13,7 @@ Always TDD: reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
 Don't fight upstream bugs; suggest filing an issue and wait for a fix.
 Avoid large changes; leave TODO puzzles for follow-up (Puzzle Driven Development).
+Hunt for low-quality code; complain and suggest filing issues, never silently fix or ignore.
 
 # Code
 
