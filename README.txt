@@ -24,7 +24,11 @@ Follow "Paired Brackets".
 Follow Elegant Objects and DDD.
 Favor "fail fast" over "fail safe".
 Constructors: only assignments, one primary, delegate from secondary.
-Classes: 1-4 attributes, final, no inheritance, no -er names, no utilities.
+No inheritance, only composition.
+No -er names.
+No utility classes.
+Only final classes.
+1-4 attributes per class.
 No static methods or public static literals.
 No setters/getters.
 Immutable objects.
@@ -43,7 +47,7 @@ Map test files 1:1 with feature files.
 Name tests as sentences; spell "cannot"/"dont" without apostrophes.
 No shared attributes, setUp/tearDown, or static constants between tests.
 No cleanup before or after tests.
-Provide custom arguments, not defaults.
+Provide custom arguments to tested objects, not defaults.
 Don't test irrelevant functionality, side effects, setters/getters/constructors, or error messages.
 Favor fakes/stubs over mocks.
 Use Hamcrest matchers.
