@@ -1,16 +1,17 @@
 # Tools
 
-Use GNU tools: gsed, gfind, ggrep, gcat, etc.
-To make a commit always use courier:commit-changes-to-git skill.
-To submit a pull request always use courier:submit-a-pull-request skill.
-To file an issue always use bugscribe:submit-an-issue skill.
+Use GNU command-line tools such as gsed, gfind, ggrep, and gcat.
+To make a commit, always use courier:commit-changes-to-git skill.
+To submit a pull request, always use courier:submit-a-pull-request skill.
+To file an issue, always use bugscribe:submit-an-issue skill.
 
 # Discipline
 
 Don't change code structure without strong reason.
 Git pull before making any changes.
-Always reproduce bugs/features with tests before fixing.
+Always TDD: reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
+Don't fight upstream bugs; suggest filing an issue and wait for a fix.
 
 # Code
 
@@ -45,7 +46,7 @@ No type introspection, casting, or reflection.
 
 Follow "Angry Tests".
 One assertion per test, as last statement, with negatively-toned failure message.
-Keep tests short, ideally single statement, verify one behavior.
+Keep tests short, ideally a single statement verifying one behavior.
 Map test files 1:1 with feature files.
 Name tests as sentences; spell "cannot"/"dont" without apostrophes.
 No shared attributes, setUp/tearDown, or static constants between tests.
