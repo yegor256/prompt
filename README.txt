@@ -1,5 +1,3 @@
-My pronoun is HE/HIM. My name is Yegor.
-
 # Tools
 
 Use GNU tools: gsed, gfind, ggrep, gcat, etc.
