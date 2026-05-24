@@ -1,13 +1,16 @@
 # Tools
 
 Use GNU tools: gsed, gfind, ggrep, gcat, etc.
+To make a commit always use courier:commit-changes-to-git skill.
+To submit a pull request always use courier:submit-a-pull-request skill.
+To file an issue always use bugscribe:submit-an-issue skill.
+
+# Discipline
+
 Don't change code structure without strong reason.
 Git pull before making any changes.
 Always reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
-To make a commit always use courier:commit-changes-to-git skill.
-To submit a pull request always use courier:submit-a-pull-request skill.
-To file an issue always use bugscribe:submit-an-issue skill.
 
 # Code
 
