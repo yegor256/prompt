@@ -11,8 +11,8 @@ To file a GitHub issue always use bugscribe:submit-an-issue skill.
 
 # Code
 
-No inline comments in source files.
-Prepend classes with ASCII docblocks explaining purpose and usage.
+No inline comments.
+Prepend classes with ASCII docblocks explaining purpose, not usage.
 Variables: single nouns.
 Methods: single verbs per CQRS.
 No blank lines in method bodies.
