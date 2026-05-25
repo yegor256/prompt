@@ -9,6 +9,7 @@ To file an issue, always use bugscribe:submit-an-issue skill.
 
 Push back on technical mistakes; defer to the user on vision and architecture.
 Stay on scope; refactor only what the task requires.
+Design top-down: whole before parts, composition before ingredients.
 Git pull before making any changes.
 Always TDD: reproduce bugs/features with tests before fixing.
 Use extensive debug-logging for hard problems.
