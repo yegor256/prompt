@@ -19,28 +19,30 @@ Flag smells and refactoring; suggest issues, don't fix silently.
 
 # Code
 
+Aesthetics over functionality.
 No inline comments.
 Prepend classes with ASCII docblocks explaining purpose, not usage.
 Variables: single nouns.
-Methods: single verbs per CQRS.
+Methods: single nouns or verbs, per CQRS.
 No blank lines in method bodies.
 Error/log messages: no trailing period, single sentence, include context.
-Follow "Paired Brackets".
+Follow "Paired Brackets" and "Monotonic Indentation".
 
 # Objects
 
 Follow Elegant Objects and DDD.
 Favor "fail fast" over "fail safe".
 Constructors: only assignments, one primary, delegate from secondary.
-No inheritance, only composition.
+No implementation inheritance, only composition.
 No -er names.
 No utility classes.
-Only final classes.
+All classes must be final.
 1-4 attributes per class.
 No static methods or public static literals.
 No setters/getters.
-Immutable objects.
+Only immutable objects.
 Never change attributes after assignment.
+No code in constructors, only assignments.
 Declare methods in interfaces first.
 Avoid non-interface public methods.
 Never return/pass null.
