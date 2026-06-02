@@ -30,7 +30,7 @@ Follow "Paired Brackets" and "Monotonic Indentation".
 
 # Objects
 
-Follow Elegant Objects and DDD.
+Follow Elegant Objects, DDD, SOLID, SRP, DRY, and YAGNI.
 Favor "fail fast" over "fail safe".
 Constructors: only assignments, one primary, delegate from secondary.
 No implementation inheritance, only composition.
