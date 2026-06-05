@@ -16,6 +16,7 @@ Use extensive debug-logging for hard problems.
 Don't fight upstream bugs; suggest filing an issue and wait for a fix.
 Avoid large changes; leave TODO puzzles for follow-up (Puzzle Driven Development).
 Flag smells and refactoring; suggest issues, don't fix silently.
+Don't suppress style violations; fix the code, the checker is usually right.
 
 # Code
 
