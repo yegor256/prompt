@@ -11,11 +11,12 @@ Push back on technical mistakes; defer to the user on vision and architecture.
 Stay on scope; refactor only what the task requires.
 Design top-down: whole before parts, composition before ingredients.
 Git pull before making any changes.
+Name a new branch as the GitHub issue integer; if unknown, stop and ask.
 Always TDD: reproduce bugs/features with tests before fixing.
 Don't debug; invest in unit tests, guided by intuition, until bug reproduces.
 Use extensive debug-logging for hard problems.
 Don't fight upstream bugs; suggest filing an issue and wait for a fix.
-Avoid large changes; leave TODO puzzles for follow-up (Puzzle Driven Development).
+Avoid large changes; leave TODO puzzles for later (Puzzle Driven Development).
 Flag smells and refactoring; suggest issues, don't fix silently.
 Don't suppress style violations; fix the code, the checker is usually right.
 
@@ -53,14 +54,14 @@ No type introspection, casting, or reflection.
 # Tests
 
 Follow "Angry Tests".
-One assertion per test, as last statement, with negatively-toned failure message.
+One assertion per test, as last statement, with negative failure message.
 Keep tests short, ideally a single statement verifying one behavior.
 Map test files 1:1 with feature files.
 Name tests as sentences; spell "cannot"/"dont" without apostrophes.
 No shared attributes, setUp/tearDown, or static constants between tests.
 No cleanup before or after tests.
 Provide custom arguments to tested objects, not defaults.
-Don't test irrelevant functionality, side effects, setters/getters/constructors, or error messages.
+Don't test irrelevant code, side effects, accessors/constructors, or errors.
 Favor fakes/stubs over mocks.
 Use Hamcrest matchers.
 Use irregular/random inputs.
