@@ -26,6 +26,7 @@ Aesthetics over functionality.
 No inline comments.
 Prepend classes with ASCII docblocks explaining purpose, not usage.
 Variables: single nouns.
+Avoid unnecessary local variables; inline single-use expressions.
 Methods: single nouns or verbs, per CQRS.
 No blank lines in method bodies.
 Error/log messages: no trailing period, single sentence, include context.
