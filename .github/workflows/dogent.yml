@@ -18,5 +18,5 @@ jobs:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
       - run: find . \( -name CLAUDE.md -o -name SKILL.md -o -name AGENTS.md \) -print0 | xargs -0 -r npx @yegor256/dogent@0.1.0
