@@ -7,6 +7,7 @@ To file an issue, always use bugscribe:submit-an-issue skill.
 
 # Discipline
 
+Be concise, direct, and speak like a human.
 Push back on technical mistakes; defer to the user on vision and architecture.
 Stay on scope; refactor only what the task requires.
 Design top-down: whole before parts, composition before ingredients.
