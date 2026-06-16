@@ -1,78 +1,114 @@
 # Tools
 
-Use GNU command-line tools such as gsed, gfind, ggrep, and gcat.
-To make a commit, always use courier:commit-changes-to-git skill.
-To submit a pull request, always use courier:submit-a-pull-request skill.
-To file an issue, always use bugscribe:submit-an-issue skill.
+Use GNU command-line tools such as `gsed`, `gfind`, `ggrep`, and `gcat`.
+Commit changes with `courier:commit-changes-to-git` skill.
+Submit pull requests with `courier:submit-a-pull-request` skill.
+File issues with `bugscribe:submit-an-issue` skill.
 
 # Discipline
 
-Be concise, direct, and speak like a human.
-Push back on technical mistakes; defer to the user on vision and architecture.
-Stay on scope; refactor only what the task requires.
-Design top-down: whole before parts, composition before ingredients.
-Git pull before making any changes.
-Name a new branch as the GitHub issue integer; if unknown, stop and ask.
-Always TDD: reproduce bugs/features with tests before fixing.
-Don't debug; invest in unit tests, guided by intuition, until bug reproduces.
+Write concise, direct, human prose.
+Push back on technical mistakes.
+Defer to users on vision and architecture.
+Stay on scope.
+Refactor only what tasks require.
+Design top-down, whole before parts, composition before ingredients.
+
+# Workflow
+
+Pull from Git before making changes.
+Name each branch after its GitHub issue integer.
+Ask when unsure of issue number.
+Always practice TDD.
+Reproduce bugs and features with tests before fixing them.
+Avoid debugging.
+Invest in unit tests until bugs reproduce, trusting intuition.
 Use extensive debug-logging for hard problems.
-Don't fight upstream bugs; suggest filing an issue and wait for a fix.
-Avoid large changes; leave TODO puzzles for later (Puzzle Driven Development).
-Flag smells and refactoring; suggest issues, don't fix silently.
-Don't suppress style violations; fix the code, the checker is usually right.
+
+# Changes
+
+Avoid fighting upstream bugs.
+Suggest filing issues for them.
+Wait for fixes.
+Avoid large changes.
+Leave puzzles for later, following Puzzle Driven Development.
+Flag smells and refactoring.
+Suggest issues rather than fixing silently.
+Never suppress style violations.
+Fix code, trusting checkers.
 
 # Code
 
-Aesthetics over functionality.
-No inline comments.
+Favor aesthetics over functionality.
+Avoid inline comments.
 Prepend classes with ASCII docblocks explaining purpose, not usage.
-Variables: single nouns.
-Avoid unnecessary local variables; inline single-use expressions.
-Methods: single nouns or verbs, per CQRS.
-No blank lines in method bodies.
-Error/log messages: no trailing period, single sentence, include context.
+Name variables as single nouns.
+Avoid unnecessary local variables.
+Inline single-use expressions.
+Name methods as single nouns or verbs, per CQRS.
+Avoid blank lines in method bodies.
+
+# Style
+
+Keep error and log messages to one sentence with context.
+Strip trailing periods from messages.
 Follow "Paired Brackets" and "Monotonic Indentation".
 
 # Objects
 
 Follow Elegant Objects, DDD, SOLID, SRP, DRY, and YAGNI.
 Favor "fail fast" over "fail safe".
-Constructors: only assignments, one primary, delegate from secondary.
-No implementation inheritance, only composition.
-No -er names.
-No utility classes.
-All classes must be final.
-1-4 attributes per class.
-No static methods or public static literals.
-No setters/getters.
-Only immutable objects.
+Allow only assignments in constructors.
+Keep one primary constructor.
+Delegate from secondary constructors.
+Compose objects instead of inheriting implementation.
+Avoid -er names.
+Avoid utility classes.
+Make every class final.
+Keep one to four attributes per class.
+
+# Methods
+
+Build only immutable objects.
 Never change attributes after assignment.
-No code in constructors, only assignments.
+Avoid static methods and public static literals.
+Avoid setters and getters.
 Declare methods in interfaces first.
 Avoid non-interface public methods.
-Never return/pass null.
-No type introspection, casting, or reflection.
+Never return or pass null.
+Avoid type introspection, casting, and reflection.
 
 # Tests
 
 Follow "Angry Tests".
-One assertion per test, as last statement, with negative failure message.
-Keep tests short, ideally a single statement verifying one behavior.
-Map test files 1:1 with feature files.
-Name tests as sentences; spell "cannot"/"dont" without apostrophes.
-No shared attributes, setUp/tearDown, or static constants between tests.
-No cleanup before or after tests.
+Place one assertion per test, as its last statement.
+Phrase each failure message negatively.
+Keep tests short.
+Verify one behavior per test with one statement.
+Map test files one-to-one with feature files.
+Name tests as sentences.
+Spell "cannot" and "dont" without apostrophes.
+Avoid shared attributes, setUp, tearDown, or static constants between tests.
+Avoid cleanup before or after tests.
+
+# Fixtures
+
 Provide custom arguments to tested objects, not defaults.
-Don't test irrelevant code, side effects, accessors/constructors, or errors.
-Favor fakes/stubs over mocks.
+Never test irrelevant code, side effects, accessors, constructors, or errors.
+Favor fakes and stubs over mocks.
 Use Hamcrest matchers.
-Use irregular/random inputs.
-Inline small fixtures, generate large ones at runtime.
+Use irregular and random inputs.
+Inline small fixtures.
+Generate large fixtures at runtime.
 Create fixture objects to avoid duplication.
-Use temp directories.
-Don't mock filesystem/sockets/memory.
+Use temporary directories.
+Never mock filesystem, sockets, or memory.
+
+# Runtime
+
 Disable logging in tests.
-Use timeouts, never wait indefinitely.
+Use timeouts.
+Never wait indefinitely.
 Test concurrency.
 Retry flaky blocks.
 Assume no Internet.
