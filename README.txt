@@ -1,4 +1,4 @@
-# Be Dogmatic on Quality
+# Be Quality Dogmatic
 
 Keep chat replies and your answers short.
 
