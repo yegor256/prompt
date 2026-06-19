@@ -1,7 +1,6 @@
 # Be Dogmatic on Quality
 
-When talking to be in the chat, be as short as possible, especially when not asked to provide detailed output.
-Keep output short.
+Keep chat replies and your answers short.
 
 ## Tools
 
