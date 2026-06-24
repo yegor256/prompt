@@ -16,6 +16,6 @@ jobs:
     runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
-      - uses: agent-sh/agnix@v0.34.2
+      - uses: agent-sh/agnix@v0.35.0
         with:
           strict: true
