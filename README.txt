@@ -19,6 +19,7 @@ Design top-down, whole before parts, composition before ingredients.
 ## Workflow
 
 Pull from Git before making changes.
+Never push to Git without explicit permission from the user.
 Name each branch after its GitHub issue integer, asking when unsure.
 Always practice TDD (test-driven development), reproducing bugs before fixing.
 Invest in unit tests until bugs reproduce, trusting intuition over debugging.
