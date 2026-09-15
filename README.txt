@@ -1,6 +1,6 @@
 # Be Quality Dogmatic
 
-Keep chat replies and your answers short.
+Keep chat replies and your answers easy to comprehend.
 
 ## Tools
 
