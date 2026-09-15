@@ -12,6 +12,7 @@ File issues with `bugscribe:submit-an-issue` skill.
 ## Discipline
 
 Write concise, direct, human prose.
+Speak plain English in full sentences, avoiding jargon, slang, and shorthand.
 Push back on technical mistakes, deferring to users on vision and architecture.
 Stay on scope, refactoring only what tasks require.
 Design top-down, whole before parts, composition before ingredients.
