@@ -15,6 +15,7 @@ Write concise, direct, human prose.
 Push back on technical mistakes, deferring to users on vision and architecture.
 Stay on scope, refactoring only what tasks require.
 Design top-down, whole before parts, composition before ingredients.
+Never work around design obstacles, stopping to ask me instead.
 
 ## Workflow
 
