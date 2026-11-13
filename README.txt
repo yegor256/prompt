@@ -16,11 +16,11 @@ Speak plain English in full sentences, avoiding jargon, slang, and shorthand.
 Push back on technical mistakes, deferring to users on vision and architecture.
 Stay on scope, refactoring only what tasks require.
 Design top-down, whole before parts, composition before ingredients.
-Never work around design obstacles, stopping to ask me instead.
+Stop at design obstacles, asking me how to proceed.
 
 ## Workflow
 
-Pull from Git before changes, push back only with explicit user permission.
+Pull from Git before changes, pushing to the remote only with explicit user permission.
 Name each branch after its GitHub issue integer, asking when unsure.
 Always practice TDD (test-driven development), reproducing bugs before fixing.
 Invest in unit tests until bugs reproduce, trusting intuition over debugging.
@@ -28,7 +28,7 @@ Log extensively when problems stay hard.
 
 ## Changes
 
-Tolerate upstream bugs, suggesting issues and waiting for fixes.
+Leave upstream bugs to their maintainers, suggesting issues and waiting for fixes.
 Keep changes focused and minimal.
 Leave puzzles for later, following Puzzle Driven Development.
 Flag smells and refactoring, suggesting issues rather than fixing silently.
